@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "The-Shevach Restaurant";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/CSS/SliderCSS.css" />
+<script src="~/Scripts/SliderShow.js"></script>
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var $spanSelected = $('.enterText');
+            if ($(this).scrollTop() > $spanSelected.height()) {
+                $spanSelected.addClass("enterTextAnimation");
+                $spanSelected.removeClass("opacity0");
+            }
+        });
+    });
+</script>
+
+
+<div id="slider">
+    <section>
+        <ul class="slides">
+            <li class="slide"><img src='~/Content/PIC/SliderShow/Restaurant_1.jpg' title='Restaurant' alt='Restaurant Pic' /></li>
+            <li class="slide"><img src='~/Content/PIC/SliderShow/Restaurant_2.jpg' title='Restaurant' alt='Restaurant Pic' /></li>
+            <li class="slide"><img src='~/Content/PIC/SliderShow/Restaurant_3.jpg' title='Restaurant' alt='Restaurant Pic' /></li>
+            <li class="slide"><img src='~/Content/PIC/SliderShow/Restaurant_1.jpg' title='Restaurant' alt='Restaurant Pic' /></li>
+        </ul>
+    </section>
+</div>
+<div id="details" class="margBtn50 valeraFont textCenter">
+    <section>
+        <h2 class="valeraFont textCenter">השבח</h2>
+        <span class="valeraFont textRight fontSize20 textCenter width80 enterText opacity0">
+            מסעדת השבח נוסדה בשנת 2018,<br />
+
+            מנת הדגל של המסעדה הינו בורקס בשר, וזאת כאות הוכרה לאימו של חברו הטוב של השבח.
+            <br />
+            המסעדה נוסדה לאחר שטעם מטעמו המשובח של הבורקס ואז הגהה את הרעיון לפתוח את המסעדה הנפלאה הזאת.
+            <br />
+            בזכות מעשה ידיו של השף והמוצרים הטריים שנקטפים מהגינה של השכן, זהו שילוב מנצח לאוכל מנצח.
+            <br />
+            המסעדה הינה מסעדה כשרה עם חניה בשפע וגישה לנכים אפשרות לישיבה בחוץ, המסעדה מגישה את כל סוגי הבשרים.
+            <br />
+
+            <b> אין תפריט צמחוני או טבעוני. </b>
+        </span>
+    </section>
+</div>
+

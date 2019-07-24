@@ -1,0 +1,22 @@
+div#slider{
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top:50px;
+    border: 2px solid black;
+}
+#slider .slides{
+    display:block ;
+    margin: 0 ;
+    padding: 0 ;
+    width: 2800px;
+    height: 400px;
+}
+#slider .slide{
+    float: left ;
+    list-style-type: none ;
+    width: 700px ;
+    height: 400px ;
+}

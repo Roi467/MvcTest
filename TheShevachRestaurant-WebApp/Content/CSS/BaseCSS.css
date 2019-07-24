@@ -1,0 +1,267 @@
+/*Bace CSS */
+
+body{
+    background-image: url('../PIC/background_pic.jpg');   
+}
+#warper{
+    margin-top:0px;
+    width: 80%;
+    height:100%;
+    margin: 0 auto;
+    background-color: #ffffcc;
+}
+div#nav {
+    margin-top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+li.nav{
+    list-style-type: none;
+    float:left;
+    margin: 0 30px;
+}
+
+a[href].nav{
+    color: #fff;
+    text-decoration: none;
+}
+#header{
+    width:100%;
+    height:100px;
+}
+h1{
+    margin-top:20px;
+    font-size: 72px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    letter-spacing:5px;
+    animation: headerTextShow 3s 1;
+}
+div#footer{
+    border-top: 3px solid black;
+    height:100px;
+    padding-top:50px;
+    margin-top:50px;
+}
+p#copyright{
+    margin-right:5px;
+    font-size:12px;
+}
+/*End Bace CSS */
+
+/*Font CSS */
+.valeraFont{
+    font-family: 'Varela Round', sans-serif;
+}
+.heeboFont{
+    font-family: 'Heebo', sans-serif;
+}
+.ubuntuFont{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.textRight{
+    text-align:right;
+}
+.textLeft{
+    text-align:left;
+}
+.textCenter{
+    text-align:center;
+}
+
+.fontSize50 {
+    font-size: 50px;
+}
+
+.fontSize30{
+    font-size:30px;
+}
+.fontSize20{
+    font-size:20px;
+}
+.fontSize15 {
+    font-size: 15px;
+}
+.fontSize50{
+    font-size: 50px;
+}
+
+/*End Font CSS */
+.margBtn50 {
+    margin-bottom: 50px;
+}
+.margBtn5 {
+    margin-bottom: 5px;
+}
+.mrg0{
+    margin:0;
+}
+
+.mrgRight5 {
+    margin-right: 5px;
+}
+.marginTop10{
+    margin-top:10px;
+}
+
+div#details{
+    margin-bottom:50px;
+}
+/*******************/
+
+.noUnderLine {
+    text-decoration:none;
+}
+
+.colorBlack{
+    color: black;
+}
+.colorWhite {
+    color: white;
+}
+.enterTextAnimation {
+    animation: enterText 4s 1;
+}
+.opacity0 {
+    opacity: 0;
+}
+div.MeallPic {
+    width: 700px;
+    height: 440px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+img.MeallPic {
+    width: 100%;
+    height: 100%;
+    
+}
+
+div#details h2 {
+    font-size: 40px;
+}
+div#menu h3.subMenu{
+    text-align:center;
+    font-size: 40px;
+}
+div#menu div.details{
+    margin: 0 auto;
+    width:60%;
+    padding: 0 15px;
+}
+.txtltr{
+     text-align:left;
+     margin-bottom:15px;
+     margin-top:5px;
+}
+div#menu p{
+    font-size: 20px;
+}
+span.details{
+    font-size: 15px;
+    float:right;
+}
+
+.width80 {
+    width: 80%;
+}
+
+/*******************/
+
+div#contact{
+    width:60%;
+    margin:25px auto;
+}
+
+div#contact input,textarea{
+    font-size:30px;
+    text-align:right;
+    width: 400px;
+    padding-right: 10px;
+    font-family: 'Rubik', sans-serif;
+    display: block;
+    margin: 10px auto;
+}
+
+.displayNone{
+    display:none;
+}
+div#contact textarea{
+    margin-bottom: 0;
+}
+div#contact p {
+    font-family: 'Varela Round', sans-serif;
+}
+span#letterNumbers {
+    font-family: 'Varela Round', sans-serif;
+    text-align: left;
+    font-size: 15px;
+    color: grey;
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+div#contact button#send{
+    margin-top:15px;
+    font-size:30px;
+    text-align:center;
+}
+
+.error_border{
+    border: 3px solid red;
+}
+.border-3px-black {
+    border: 3px solid black;
+}
+/********************************/
+div#gallery{
+    width:80%;
+    margin: 0 auto
+}
+div.imgGallery{
+    width:30%;
+    height:250px;
+    border:3px solid black;
+    margin: 5px;
+    display:inline-block;
+    vertical-align:top;
+    position:relative;
+}
+
+
+.galleryMealName {
+    background-color: #4d4d4d;
+    color: white;
+    height: 50px;
+    width: 100%;
+    padding-top: 5px;
+    position: absolute;
+    top: 195px;
+}
+/********************************/
+@keyframes headerTextShow {
+    30% {
+        letter-spacing: 15px;
+    }
+
+    85% {
+        letter-spacing: 5px;
+    }
+}
+
+@keyframes enterText {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}

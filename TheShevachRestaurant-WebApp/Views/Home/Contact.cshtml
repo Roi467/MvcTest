@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "The-Shevach Restaurant - Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/ContactJS.js"></script>
+
+<div id="contact" class="fontSize30 textCenter">
+    <section>
+
+        <h2 class="valeraFont">צור קשר </h2>
+        
+        <input type="text" name="Name" placeholder="שם" maxlength="25" />
+        <input type="email" name="Email" placeholder="אימייל" />
+        <input type="tel" name="Phone" placeholder="מספר פלאפון" maxlength="10" />
+        <textarea rows="4" cols="50" name="Message" placeholder="הודעה" maxlength="250"></textarea>
+
+        <span id="letterNumbers">250</span>
+        <br />
+        <button id="send"> שלח </button>
+        <div>
+            <p>
+                מענה טלפוני בין השעות 12:00-00:00 <br />
+                לא כולל שבתות חגים ומועדים. <br /><br />
+                03-5654788
+            </p>
+        </div>
+    </section>
+</div>
+

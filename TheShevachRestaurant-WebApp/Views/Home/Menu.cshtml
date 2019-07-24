@@ -1,0 +1,79 @@
+﻿@model TheShevachRestaurant_WebApp.Models.MenuModel
+@using TheShevachRestaurant_WebApp.Models;
+
+@{
+    ViewBag.Title = "The-Shevach Restaurant - Menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="menu" class="valeraFont">
+    <section>
+        <h2 class="textCenter fontSize50">תפריט</h2>
+
+        <h3 class="subMenu">מנות פתיחה</h3>
+        
+        <div class="details">
+       
+            @{ foreach (Meal dish in Model.Menus)
+                {
+                    if (@dish.MealCategory == "Entress")
+                    {
+                        <p class="margBtn5 textRight fontSize20">@Html.ActionLink(@dish.MealName, "Meall", new { id = @dish.MealId }, new { @class = "noUnderLine colorBlack" })</p>
+                        <span class="details fontSize15">@dish.MealDescription</span>
+                        <p class="txtltr fontSize20"> @dish.MealPrice </p>
+                    }
+                }
+            }
+        
+        </div>
+
+        <h3 class="subMenu">מנות עיקריות</h3>
+
+        <div class="details">
+            @{ foreach (Meal dish in Model.Menus)
+                {
+                    if (@dish.MealCategory == "Main")
+                    {
+                        <p class="margBtn5 textRight fontSize20">@Html.ActionLink(@dish.MealName, "Meall",new { id = @dish.MealId }, new {@class = "noUnderLine colorBlack" })</p>
+                        <span class="details fontSize15">@dish.MealDescription</span>
+                        <p class="txtltr fontSize20"> @dish.MealPrice </p>
+                    }
+                }
+            }
+        </div>
+
+        <h3 class="subMenu">קינוחים</h3>
+
+        <div class="details">
+
+            @{ foreach (Meal dish in Model.Menus)
+                {
+                    if (@dish.MealCategory == "Desserts")
+                    {
+                        <p class="margBtn5 textRight fontSize20">@Html.ActionLink(@dish.MealName, "Meall", new { id = @dish.MealId }, new { @class = "noUnderLine colorBlack" })</p>
+                        <span class="details fontSize15">@dish.MealDescription</span>
+                        <p class="txtltr fontSize20"> @dish.MealPrice </p>
+                    }
+                }
+            }
+
+        </div>
+
+        <h3 class="subMenu">משקאות</h3>
+
+        <div class="details">
+
+            @{ foreach (Meal dish in Model.Menus)
+                {
+                    if (@dish.MealCategory == "Drinks")
+                    {
+                        <p class="margBtn5 textRight fontSize20">@Html.ActionLink(@dish.MealName, "Meall", new { id = @dish.MealId }, new { @class = "noUnderLine colorBlack" })</p>
+                        <span class="details fontSize15">@dish.MealDescription</span>
+                        <p class="txtltr fontSize20"> @dish.MealPrice </p>
+                    }
+                }
+            }
+
+        </div>
+    </section>
+</div>

@@ -1,0 +1,18 @@
+﻿@model TheShevachRestaurant_WebApp.Models.Meal
+
+
+@{
+    ViewBag.Title = Model.MealName;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="valeraFont textCenter fontSize30 ">
+    <div class="MeallPic">
+        <img src="@Model.MealImg" title="@Model.MealName" alt="@Model.MealName" class="MeallPic border-3px-black" />
+    </div>
+
+    <h2 class="fontSize50">@Model.MealName</h2>
+    <span>@Model.MealDescription</span><br />
+    <span>מחיר: </span>
+    <span>@Model.MealPrice</span>
+</div>

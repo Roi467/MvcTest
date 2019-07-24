@@ -1,0 +1,27 @@
+﻿@model TheShevachRestaurant_WebApp.Models.MenuModel
+@using TheShevachRestaurant_WebApp.Models;
+@{
+    ViewBag.Title = "Gallery";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/GalleryJS.js"></script>
+
+<h2 class="textCenter valeraFont fontSize50">גלריית התמונות</h2>
+<div id="gallery">
+    @{
+        foreach (Meal dish in Model.Menus)
+        {
+            {
+                <div id="Dish-@dish.MealId" class="imgGallery">
+                    <div id="Dish-@dish.MealId-in" class="galleryMealName displayNone">
+                        <p class="valeraFont fontSize20 mrg0"> @Html.ActionLink(@dish.MealName, "Meall", null, new { id = @dish.MealId, @class = "noUnderLine colorWhite mrgRight5" }) </p>
+                    </div>
+                    <img src="@dish.MealImg" title="@dish.MealName" alt="@dish.MealName" class="MeallPic" />
+                </div>
+            }
+        }
+    }
+
+</div>
+

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+
+    <title>@ViewBag.Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="~/Content/CSS/BaseCSS.css" />
+    <link href="https://fonts.googleapis.com/css?family=Heebo|Montserrat|Ubuntu|Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+
+
+</head>
+    <body>
+        <div id="warper">
+            <div id="nav" class="fontSize30">
+                <nav>
+                    <ul id="navigation">
+                        <li class="nav">
+                            @Html.ActionLink("Home","Index","Home",null,htmlAttributes:
+                                new Dictionary<string, object> { { "class", "nav" }, { "title", "Home" } } )
+
+                        </li>
+                        <li class="nav">
+                            @Html.ActionLink("Menu", "Menu", "Home", null,htmlAttributes:
+                                new Dictionary<string, object> { { "class", "nav" }, { "title", "Menu" } } )
+                        </li>
+                        <li class="nav">
+                            @Html.ActionLink("Gallery", "Gallery", "Home", null,htmlAttributes:
+                               new Dictionary<string, object> { { "class", "nav" }, { "title", "Contact" } } )
+                        </li>
+                        <li class="nav">
+                            @Html.ActionLink("Contact", "Contact", "Home", null,htmlAttributes:
+                               new Dictionary<string, object> { { "class", "nav" }, { "title", "Contact" } } )
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        <div id="header">
+            <header>
+                 <h1 class="ubuntuFont textCenter">The-Shevach Restaurant</h1>
+            </header>
+        </div>
+                <hr />
+                <div id="main">
+                    <main>
+                        @RenderBody()
+                    </main>
+                </div>
+                <div id="footer" class="heeboFont textCenter fontSize30">
+                    <footer>
+                        <span>
+                            השבח , פינת מאפו , על יד תחנת האוטובוס.
+                        </span>
+                        <br />
+                        <p id="copyright" class="textRight">
+                            כל הזכויות שמורות להשבח ובניו בע"מ.
+                        </p>
+
+                    </footer>
+                </div>
+            </div>
+        </body>
+</html>
+
+
+
+
